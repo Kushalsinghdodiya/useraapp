@@ -58,6 +58,7 @@ export default function UserList() {
   ];
 
   useEffect(() => {
+    localStorage.setItem("Udata", JSON.stringify(data));
     let getdata = localStorage.getItem("Udata");
     setlist(JSON.parse(getdata));
   }, []);
