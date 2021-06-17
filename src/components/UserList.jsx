@@ -88,11 +88,7 @@ export default function UserList() {
 
   return (
     <div className="container">
-      <div className="row">
-        <div className="col-sm-12 m-5 text-center">
-          <h4>Total Number of Users in Data Base{list.length} </h4>
-        </div>
-      </div>
+      
 
       <div className="row m-3">
         <div className="col-sm-6 text-center">
