@@ -56,9 +56,15 @@ export default function UserList() {
         phone: "787878787787",
       },
   ];
+  
+  
+  
+  window.onload=()=>{
+    localStorage.setItem("Udata", JSON.stringify(data));
+  }
 
   useEffect(() => {
-    localStorage.setItem("Udata", JSON.stringify(data));
+    
     let getdata = localStorage.getItem("Udata");
     setlist(JSON.parse(getdata));
   }, []);
