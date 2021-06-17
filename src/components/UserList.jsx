@@ -127,8 +127,7 @@ export default function UserList() {
           </tr>
         </thead>
         <tbody>
-          {list.length > 0 &&
-            list.map((item, index) => (
+          {list.map((item, index) => (
               <tr key={index}>
                 <td>{item.id}</td>
                 <td>{item.firstname}</td>
